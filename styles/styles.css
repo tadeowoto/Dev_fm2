@@ -2,12 +2,117 @@
 
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
-    --Very-dark-blue: hsl(217, 54%, 11%);
-    --Very-dark-blue : hsl(216, 50%, 16%);
-    --Very-dark-blue: hsl(215, 32%, 27%);
+    --Very-dark-blue1: hsl(217, 54%, 11%);
+    --Very-dark-blue2 : hsl(216, 50%, 16%);
+    --Very-dark-blue3: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
 
-    --Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+    --Family: 'Outfit'
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    background-color: var(--Very-dark-blue1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.component{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Very-dark-blue2);
+    width: 350px;
+    height: 600px;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0px 10px 24px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.main-image{
+    width: 300px;
+    border-radius: 22px;
+}
+
+.main-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: var(--Family);
+}
+
+.nft-name{
+    color: var(--White);
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.nft-description{
+    font-size: 18px;
+    color: var(--Soft-blue);
+}
+
+.price-info{
+    display: flex;
+    width: 82%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    border-bottom: 0.5px solid var(--Soft-blue) ;
+}
+
+.eth-price{
+    font-size: 20px;
+    font-family: var(--Family);
+    color: var(--Cyan);
+}
+
+.eth-logo{
+    width: 12px;
+    margin-right: 8px;
+}
+
+.time{
+    font-size: 18px;
+    color: var(--Soft-blue);
+    font-family: var(--Family);
+}
+
+
+
+.creator-container{
+    display: flex;
+    width: 82%;
+    margin-top: 10px;
+}
+
+.creator-image{
+    width: 60px;
+    margin-right: 16px;
+}
+
+.creator-info{
+    font-size: 18px;
+    font-family: var(--Family);
+    color: var(--Soft-blue);
+}
+
+.creator-name{
+    color: var(--White);
+}
+
+.creator-name:hover{
+    color: var(--White);
+    font-size: 19px;
+    cursor: pointer;
 }
 
 
